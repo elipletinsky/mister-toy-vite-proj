@@ -1,0 +1,7 @@
+.toy-list{
+    display: flex;
+}
+.activity{
+    display: flex;
+    flex-direction: column;
+}
