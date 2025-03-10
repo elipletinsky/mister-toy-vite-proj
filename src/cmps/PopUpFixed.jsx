@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { createPortal } from "react-dom";
 
+
 export function PopUp({ heading, footing, children, onClose }){
   useEffect(() => {
     const handleKeyDown = (event) => {
