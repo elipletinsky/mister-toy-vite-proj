@@ -1,7 +1,7 @@
 import { toyService } from "../services/toy.service.js"
 import { showErrorMsg } from "../services/event-bus.service.js"
 import { Chat } from "../cmps/Chat.jsx"
-import { PopUp } from "../cmps/PopUp.jsx"
+import { PopUp } from "../cmps/PopUpFixed.jsx"
 import { useState, useEffect } from "react"
 import { useParams, useNavigate, Link } from "react-router-dom"
 import { ToyPreview } from "../cmps/ToyPreview.jsx"
