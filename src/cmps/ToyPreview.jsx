@@ -74,7 +74,7 @@ export function ToyPreview({ toy, onRemoveToy }) {
       <span className="preview-price">{toy.price}$</span>
       <span className="preview-labels"> {toy.labels.join(", ")}</span>
       <span className="preview-date">{getReleventDate()}</span>
-      <img src={toy.imgUrl} alt="" />
+      <img src={getBaseUrl()+"/"+toy.imgUrl} alt="" />
     </div>
   )
 }

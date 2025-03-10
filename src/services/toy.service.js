@@ -142,7 +142,7 @@ function getEmptyToy(name = "", labels =[]) {
 function _createToy(name, labels) {
   const toy = getEmptyToy(name, labels)
   toy._id = utilService.makeId()
-  toy.imgUrl = "/assets/img/toy-teddy-bear-baby-svgrepo-com.svg"
+  toy.imgUrl = `public/assets/img/toy-teddy-bear-baby-svgrepo-com.svg`
   toy.price = utilService.getRandomIntInclusive(10, 100)
   toy.inStock = utilService.getRandomIntInclusive(0, 1) ? true : false
   toy.createdAt =
