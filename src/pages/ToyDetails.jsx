@@ -1,7 +1,7 @@
 import { toyService } from "../services/toy.service.js"
 import { showErrorMsg } from "../services/event-bus.service.js"
 import { Chat } from "../cmps/Chat.jsx"
-import { Popup } from "../cmps/Popup.jsx"
+import { PopUp } from "../cmps/Popup.jsx"
 import { useState, useEffect } from "react"
 import { useParams, useNavigate, Link } from "react-router-dom"
 import { ToyPreview } from "../cmps/ToyPreview.jsx"
@@ -59,7 +59,7 @@ export function ToyDetails() {
       </div>
         <button onClick={() => setIsPopupOpen(true)}>Chat</button>
         {isPopupOpen && (
-          <Popup
+          <PopUp
             heading={<h2 style={{ alignContent: "center" }}>Chat</h2>}
             footing={
               <button onClick={() => setIsPopupOpen(false)}>Close</button>
@@ -67,7 +67,7 @@ export function ToyDetails() {
             onClose={() => setIsPopupOpen(false)}
           >
             <Chat />
-          </Popup>
+          </PopUp>
         )}
     </section>
   )
