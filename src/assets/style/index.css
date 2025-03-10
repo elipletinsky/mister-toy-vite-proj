@@ -23,6 +23,8 @@
 @import "cmps/ToyPreview.css";
 @import "cmps/ToyDetails.css";
 @import "cmps/ToyEdit.css";
+@import "cmps/Chat.css";
+@import "cmps/PopUp.css";
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
